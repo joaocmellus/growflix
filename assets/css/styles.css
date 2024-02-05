@@ -12,3 +12,22 @@ header.bg-banner {
 .btn-redirect:hover {
     background-color: #B6060F;
 }
+
+.accordion-button {
+    --bs-accordion-active-bg: #303030;
+    --bs-accordion-btn-bg: #303030;
+    --collapsed-icon: url("../icons/add.svg");
+}
+
+.accordion-button::after {
+    background-image: var(--collapsed-icon);
+}
+
+.accordion-button:not(.collapsed)::after {
+    background-image: var(--collapsed-icon);
+    
+}
+
+.accordion-body {
+    background-color: #f7f7f7;
+}
