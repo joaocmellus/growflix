@@ -1,6 +1,10 @@
 header.bg-banner {
-    background-color: unset;
     background: black url(../images/banner-initial.png) center top/cover no-repeat fixed;
+}
+
+header.bg-banner-home {
+    background: black url(../images/growcast-01.png) center top/cover no-repeat;
+    min-height: 720px;
 }
 
 .btn-redirect {
