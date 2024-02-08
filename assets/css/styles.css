@@ -35,3 +35,40 @@ header.bg-banner-home {
 .accordion-body {
     background-color: #f7f7f7;
 }
+
+.col-12:has(>div.card) {
+    min-height: 220px;
+}
+
+.card {
+    background: none;
+    max-width: calc(100vw - 10%);
+    transition: all .5s ease-out;
+}
+
+.card-body {
+    display: none;
+}
+
+.card:hover {
+    position: absolute;
+    width: 120%;
+    margin-top: -10%;
+    z-index: 1;
+}
+
+.card:hover .card-body {
+    display: block;
+}
+
+@media screen and (width <= 768px) {
+    .col-12:has(>div.card) {
+        min-height: 280px;
+    }
+}
+
+@media screen and (width < 576px) {
+    .col-12:has(>div.card) {
+        min-height: 250px;
+    }
+}
