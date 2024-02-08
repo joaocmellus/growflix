@@ -61,6 +61,11 @@ header.bg-banner-home {
     display: block;
 }
 
+span.movie-link:hover {
+    opacity: 0.8;
+    cursor: pointer;
+}
+
 @media screen and (width <= 768px) {
     .col-12:has(>div.card) {
         min-height: 280px;
