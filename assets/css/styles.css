@@ -1,0 +1,79 @@
+header.bg-banner {
+    background: black url(../images/banner-initial.png) center top/cover no-repeat fixed;
+}
+
+header.bg-banner-home {
+    background: black url(../images/growcast-01.png) center top/cover no-repeat;
+    min-height: 720px;
+}
+
+.btn-redirect {
+    background-color: #E50914;
+    padding: 20px 35px;
+    color: white;
+}
+
+.btn-redirect:hover {
+    background-color: #B6060F;
+}
+
+.accordion-button {
+    --bs-accordion-active-bg: #303030;
+    --bs-accordion-btn-bg: #303030;
+    --collapsed-icon: url("../icons/add.svg");
+}
+
+.accordion-button::after {
+    background-image: var(--collapsed-icon);
+}
+
+.accordion-button:not(.collapsed)::after {
+    background-image: var(--collapsed-icon);
+    
+}
+
+.accordion-body {
+    background-color: #f7f7f7;
+}
+
+.col-12:has(>div.card) {
+    min-height: 220px;
+}
+
+.card {
+    background: none;
+    max-width: calc(100vw - 10%);
+    transition: all .5s ease-out;
+}
+
+.card-body {
+    display: none;
+}
+
+.card:hover {
+    position: absolute;
+    width: 120%;
+    margin-top: -10%;
+    z-index: 1;
+}
+
+.card:hover .card-body {
+    display: block;
+}
+
+span.movie-link:hover {
+    opacity: 0.8;
+    cursor: pointer;
+}
+
+@media screen and (width <= 768px) {
+    .col-12:has(>div.card) {
+        min-height: 280px;
+    }
+}
+
+@media screen and (width < 576px) {
+    .col-12:has(>div.card) {
+        min-height: 250px;
+    }
+}
